@@ -1,0 +1,662 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-05T10:35:44.869Z",
+        "line": 13,
+        "name": "Verify the order being placed using \"postOrderApi\"",
+        "description": "",
+        "id": "validate-petstore-post-orders-apis;verify-the-order-being-placed-using-\"postorderapi\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2371000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "place order payload with 1, 2, 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 25
+                },
+                {
+                  "val": "2",
+                  "offset": 28
+                },
+                {
+                  "val": "2",
+                  "offset": 31
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.place_order_payload_with(java.lang.Integer,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3125000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"postOrderApi\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"postOrderApi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 31
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1656000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify \"status\" property in response is \"placed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"placed\"",
+                  "offset": 40
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.verify_property_in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify \"complete\" property in response is \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"complete\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"true\"",
+                  "offset": 42
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.verify_property_in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PostOrder"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:35:52.240Z",
+        "line": 14,
+        "name": "Verify the order being placed using \"postOrderApi\"",
+        "description": "",
+        "id": "validate-petstore-post-orders-apis;verify-the-order-being-placed-using-\"postorderapi\";;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "place order payload with 2, 2, 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 25
+                },
+                {
+                  "val": "2",
+                  "offset": 28
+                },
+                {
+                  "val": "1",
+                  "offset": 31
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.place_order_payload_with(java.lang.Integer,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 500000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"postOrderApi\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"postOrderApi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 31
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify \"status\" property in response is \"placed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"placed\"",
+                  "offset": 40
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.verify_property_in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify \"complete\" property in response is \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"complete\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"true\"",
+                  "offset": 42
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.verify_property_in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PostOrder"
+          }
+        ]
+      }
+    ],
+    "name": "Validate petstore POST orders APIs",
+    "description": "",
+    "id": "validate-petstore-post-orders-apis",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/org/petstore/features/01_postOrderValidations.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-05T10:35:52.818Z",
+        "line": 13,
+        "name": "Verify the orders using \"getOrderApi\"",
+        "description": "",
+        "id": "validate-petstore-get-orders-apis;verify-the-orders-using-\"getorderapi\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "get order payload with 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 23
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.get_order_payload_with(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 563000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"getOrderApi\" with \"get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getOrderApi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"get\"",
+                  "offset": 30
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"status\" in response body is \"placed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"placed\"",
+                  "offset": 29
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify \"complete\" property in response is \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"complete\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"true\"",
+                  "offset": 42
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.verify_property_in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetOrder"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:35:53.458Z",
+        "line": 23,
+        "name": "Verify the orders using \"getOrderApi\"",
+        "description": "",
+        "id": "validate-petstore-get-orders-apis;verify-the-orders-using-\"getorderapi\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "get order payload with 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 23
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.get_order_payload_with(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 500000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user calls \"getOrderApi\" with \"get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getOrderApi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"get\"",
+                  "offset": 30
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The API call is success with status code 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 41
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetOrder"
+          }
+        ]
+      }
+    ],
+    "name": "Validate petstore GET orders APIs",
+    "description": "",
+    "id": "validate-petstore-get-orders-apis",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/org/petstore/features/02_getOrderValidations.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-05T10:35:53.958Z",
+        "line": 12,
+        "name": "Verify delete order functionality is working using \"deleteOrderApi\"",
+        "description": "",
+        "id": "validate-petstore-delete-orders-apis;verify-delete-order-functionality-is-working-using-\"deleteorderapi\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "delete order payload with 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 26
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.delete_order_payload_with(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 500000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"deleteOrderApi\" with \"delete\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deleteOrderApi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"delete\"",
+                  "offset": 33
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify \"code\" property in response is \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"code\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"200\"",
+                  "offset": 38
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.verify_property_in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify \"type\" property in response is \"unknown\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"type\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"unknown\"",
+                  "offset": 38
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.verify_property_in_response_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeleteOrder"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T10:35:54.521Z",
+        "line": 22,
+        "name": "Verify delete order functionality is working using \"deleteOrderApi\"",
+        "description": "",
+        "id": "validate-petstore-delete-orders-apis;verify-delete-order-functionality-is-working-using-\"deleteorderapi\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "delete order payload with 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 26
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.delete_order_payload_with(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 500000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user calls \"deleteOrderApi\" with \"delete\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deleteOrderApi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"delete\"",
+                  "offset": 33
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.user_calls_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The API call is success with status code 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 41
+                }
+              ],
+              "location": "org.petstore.stepDefinitions.StepDefinition.the_api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeleteOrder"
+          }
+        ]
+      }
+    ],
+    "name": "Validate petstore DELETE orders APIs",
+    "description": "",
+    "id": "validate-petstore-delete-orders-apis",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/org/petstore/features/03_deleteOrderValidations.feature",
+    "tags": []
+  }
+]

@@ -17,6 +17,7 @@ import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
+import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertEquals;
 
 public class StepDefinition extends Utils {
@@ -65,4 +66,17 @@ public class StepDefinition extends Utils {
         res = given().pathParam("orderId", id).spec(requestSpecification());
     }
 
+    @Given("place order payload with {string}")
+    public void placeOrderPayloadWithPetIdQuantity(String orderId) {
+        given().log().all().header("Content-Type","application/json")
+                .header("accept","application/json")
+                .body("{\n" +
+                        "  \"id\": 15,\n" +
+                        "  \"petId\": 5,\n" +
+                        "  \"quantity\": 40,\n" +
+                        "  \"shipDate\": \"abc\",\n" +
+                        "  \"status\": \"placed\",\n" +
+                        "  \"complete\": true\n" +
+                        "}").when().post("/v2/store/order").then().assertThat().statusCode(500);
+    }
 }
